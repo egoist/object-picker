@@ -9,7 +9,7 @@ test('main', t => {
     zoo: ''
   }
 
-  t.deepEqual(picker(obj, 'foo barbee baz zoo'), {
+  t.deepEqual(picker(obj, ['foo', 'barbee', 'baz', 'zoo']), {
     foo: 'bar',
     baz: undefined,
     zoo: ''

@@ -20,7 +20,7 @@ const obj = {
   zip: 'leave me alone'
 }
 
-picker(obj, 'foo bar barbee')
+picker(obj, ['foo', 'bar', 'barbee'])
 //=> {foo: undefined, bar: ''}
 ```
 
@@ -36,10 +36,10 @@ The input object.
 
 #### selections
 
-Type: `String`  
-Default: `''`
+Type: `Array`  
+Default: `[]`
 
-Split each selection by comma `,` or space ` `.
+The fields to select.
 
 ## License
 

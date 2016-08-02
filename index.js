@@ -6,8 +6,8 @@ module.exports = function objectPicker(obj, selections) {
   }
 
   var res = {}
-  selections = selections || ''
-  selections.split(/\s|,/).forEach(function (selection) {
+  selections = selections || []
+  selections.forEach(function (selection) {
     if (selection && {}.hasOwnProperty.call(obj, selection)) {
       res[selection] = obj[selection]
     }
